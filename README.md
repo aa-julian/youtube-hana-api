@@ -1,4 +1,4 @@
-# Global Conflict Analysis Platform
+# REST Services for loading and querying Youtube Data in SAP HANA
 
 REST API services deployable on [SAP Cloud Platform](https://cloudplatform.sap.com/index.html)
 
