@@ -63,3 +63,17 @@ cf service-key aaj-hackathon-db aaj-hackathon-db-key
 ```bash
 ./cf-push-buildpack.sh
 ```
+
+## Routes and Info
+
+* In current build there are three routes:
+    1. Database Info - https://<base url>/dbInfoGet
+        - This service provides information on the counts on each search word within the db
+    2. Data Get - https://<base url>/videoDataGet
+        - Required search parameter searchTerm for getting relevant information
+    3. New Data Get - https://<base url>/newVideoData
+        - This service grabs data from Youtube API and loads it into HANA based on your parameters (Currently only applies to Caraccas, Venezuala over US Embassy)
+        - Required search parameters:
+            i. searchTerm
+            ii. maxResults (integer value)
+            iii. radius (integer value translates to miles)
