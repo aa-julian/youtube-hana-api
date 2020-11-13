@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-credentials=$(cf service-key aaj-hackathon-db aaj-hackathon-db-key | sed -n 3,14p)
+credentials=$(cf service-key hdi-hana hdi-hana-key | sed -n 3,14p)
 if [[ -z "$credentials" ]]; then
-  echo "service-key 'gca-db-key' not found"
+  echo "service-key 'hdi-hana-key' not found"
   exit 1
 fi
 

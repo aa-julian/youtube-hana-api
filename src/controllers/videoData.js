@@ -10,7 +10,7 @@ module.exports = (req, res) => {
 
 
     sql = `
-    SELECT * FROM "youtube_info"
+    SELECT *, "location".ST_ASGEOJSON() as GEOLOCATION FROM "youtube_info"
     WHERE "search_word" LIKE '${searchWord}';
     `;
 

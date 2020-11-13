@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
-service=aaj-hackathon-db
+service=hdi-hana
 status=$(cf service $service | sed -n 3p)
 if [[ $status = "FAILED" ]]; then
   exit 1
 fi
 
-app=youtube-api
+app=youtube-hana-api
 
 cf push $app \
     -b nodejs_buildpack \
