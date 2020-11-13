@@ -1,0 +1,13 @@
+{
+    "env": {
+        "node": true,
+        "es6": true
+    },
+    "extends": [],
+    "rules": {
+        // "indent": ["error", 4],
+        // "comma-dangle": ["error", "never"],
+        //"no-console": ["error", {"allow": ["info", "warn", "error"]}],
+        "max-len": ["warn", 250]
+    }
+}
