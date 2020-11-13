@@ -31,8 +31,6 @@ hdbext.createConnection(hanaConfig, (error, client) => {
         &maxResults=${maxResults}&locationRadius=${encodeURIComponent(radius+'km')}&part=snippet&type=video
     `;
 
-    console.log(url);
-
     const statement = client.prepare(
         `INSERT INTO "youtube_info" 
          VALUES (?,?,?,?,?,?,?,?,?,NEW ST_POINT(?),?,?);`
