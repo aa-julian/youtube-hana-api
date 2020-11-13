@@ -11,7 +11,7 @@ module.exports = (req, res) => {
 
     sql = `
     SELECT * FROM "youtube_info"
-    WHERE "search_word" LIKE ${searchWord};
+    WHERE "search_word" LIKE '${searchWord}';
     `;
 
     //HANA DB Connection and call
